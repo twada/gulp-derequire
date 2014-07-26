@@ -3,6 +3,7 @@
   "version": "0.2.1",
   "description": "A Gulp plugin to apply derequire to target Buffer/Stream",
   "keywords": [
+    "derequire",
     "gulpplugin"
   ],
   "main": "./index.js",
