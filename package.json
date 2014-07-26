@@ -1,7 +1,7 @@
 {
   "name": "gulp-derequire",
   "version": "0.0.0",
-  "description": "A Gulp plugin for derequire",
+  "description": "A Gulp plugin to apply derequire to target Buffer/Stream",
   "keywords": [
     "gulpplugin"
   ],
