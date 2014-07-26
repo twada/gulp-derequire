@@ -26,18 +26,18 @@ module.exports = function (params) {
     };
 
     return through.obj(function (file, encoding, callback) {
+        encoding = encoding || 'utf8';
         if (file.isNull()) {
             this.push(file);
         } else if (file.isBuffer()) {
-            file.contents = transform(file.contents.toString('utf8'));
+            file.contents = transform(file.contents.toString(encoding));
             this.push(file);
         } else if (file.isStream()) {
             file.contents = file.contents.pipe(new BufferStreams(function(err, buf, cb) {
                 if(err) {
                     cb(new gutil.PluginError('gulp-derequire', err, {showStack: true}));
                 } else {
-                    buf = transform(buf.toString('utf8'));
-                    cb(null, buf);
+                    cb(null, transform(buf.toString(encoding)));
                 }
             }));
             this.push(file);
