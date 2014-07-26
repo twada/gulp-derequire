@@ -1,3 +1,12 @@
+/**
+ * gulp-derequire
+ * 
+ * https://github.com/twada/gulp-derequire
+ *
+ * Copyright (c) 2014 Takuto Wada
+ * Licensed under the MIT license.
+ *   http://twada.mit-license.org/
+ */
 var through = require('through2'),
 	gutil = require('gulp-util'),
     xtend = require('xtend'),
