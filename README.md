@@ -20,7 +20,8 @@ Then, add it to your `gulpfile.js`:
 
 ```javascript
 var derequire = require('gulp-derequire');
-var browserify = require('browserify'),
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
 
 gulp.task('build', function() {
     var bundleStream = browserify({entries: './index.js', standalone: 'yourModule'}).bundle();
