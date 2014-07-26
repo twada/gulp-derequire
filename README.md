@@ -22,7 +22,7 @@ Then, add it to your `gulpfile.js`:
 var derequire = require("gulp-derequire");
 var browserify = require('browserify'),
 
-gulp.task('build, function() {
+gulp.task('build', function() {
     var bundleStream = browserify({entries: './index.js', standalone: 'yourModule'}).bundle();
     return bundleStream
         .pipe(source('yourModule.js'))
