@@ -1,0 +1,47 @@
+{
+  "name": "gulp-derequire",
+  "version": "0.0.0",
+  "description": "A Gulp plugin for derequire",
+  "keywords": [
+    "gulpplugin"
+  ],
+  "main": "./index.js",
+  "files": [
+    "README.md",
+    "index.js",
+    "package.json",
+    "test"
+  ],
+  "dependencies": {
+    "bufferstreams": "~0.0.2",
+    "derequire": "~0.9.0",
+    "gulp-util": "~3.0.0",
+    "through2": "~0.5.1",
+    "xtend": "~3.0.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.20.1",
+    "event-stream": "~3.1.7"
+  },
+  "scripts": {
+    "jshint": "jshint index.js",
+    "test": "./node_modules/.bin/mocha"
+  },
+  "author": {
+    "name": "Takuto Wada",
+    "email": "takuto.wada@gmail.com",
+    "url": "http://github.com/twada"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/twada/gulp-derequire.git"
+  },
+  "homepage": "http://github.com/twada/gulp-derequire",
+  "bugs": "https://github.com/twada/gulp-derequire/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://twada.mit-license.org/"
+    }
+  ]
+}
