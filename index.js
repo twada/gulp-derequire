@@ -8,13 +8,13 @@
  *   http://twada.mit-license.org/
  */
 var through = require('through2'),
-	gutil = require('gulp-util'),
+    gutil = require('gulp-util'),
     xtend = require('xtend'),
     derequire = require('derequire'),
     BufferStreams = require('bufferstreams');
 
 module.exports = function (params) {
-	'use strict';
+    'use strict';
 
     var opts = xtend({
         tokenTo: '_dereq_',

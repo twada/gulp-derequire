@@ -4,7 +4,7 @@
 delete require.cache[require.resolve('../')];
 
 var fs = require('fs'),
-	es = require('event-stream'),
+    es = require('event-stream'),
     assert = require('assert'),
     gutil = require('gulp-util'),
     derequire = require('../');
@@ -39,7 +39,7 @@ describe('gulp-derequire', function () {
         stream.end();
     });
 
-	it('should produce expected file via stream', function (done) {
+    it('should produce expected file via stream', function (done) {
         var stream = derequire(),
             srcStream = new gutil.File({
                 path: 'test/fixtures/example.js',
@@ -58,16 +58,16 @@ describe('gulp-derequire', function () {
             done();
         });
         stream.on('data', function (newFile) {
-			assert(newFile);
-			assert(newFile.contents);
+            assert(newFile);
+            assert(newFile.contents);
             newFile.contents.pipe(es.wait(function(err, data) {
-				assert(!err);
+                assert(!err);
                 assert.equal(data, String(expectedFile.contents));
-				done();
+                done();
             }));
         });
         stream.write(srcStream);
         stream.end();
-	});
+    });
 
 });
