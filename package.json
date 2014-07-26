@@ -20,7 +20,7 @@
     "xtend": "~3.0.0"
   },
   "devDependencies": {
-    "mocha": "~1.20.1",
+    "mocha": "~1.21.0",
     "event-stream": "~3.1.7"
   },
   "scripts": {
