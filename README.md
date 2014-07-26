@@ -3,6 +3,11 @@
 
 > A [gulp](https://github.com/wearefractal/gulp) plugin for [derequire](https://github.com/calvinmetcalf/derequire).
 
+
+## Description
+`gulp-derequire` is a gulp plugin to apply [derequire](https://github.com/calvinmetcalf/derequire) to target Buffer/Stream. It's useful when you are building standalone module using [browserify](http://browserify.org/) with gulp.
+
+
 ## Usage
 
 First, install `gulp-derequire` as a development dependency:
@@ -46,12 +51,12 @@ Default value: `'_dereq_'`
 Identifier to replace to.
 
 
-## AUTHOR
+## Author
 
 * [Takuto Wada](http://github.com/twada)
 
 
-## LICENSE
+## License
 
 Licensed under the [MIT](http://twada.mit-license.org/) license.
 
