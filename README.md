@@ -28,7 +28,7 @@ gulp.task('build', function() {
     return bundleStream
         .pipe(source('yourModule.js'))
         .pipe(derequire({
-            tokenTo: '_dereq_',
+            tokenTo:   '_dereq_',
             tokenFrom: 'require'
         }))
         .pipe(gulp.dest('./build'));
@@ -38,6 +38,8 @@ gulp.task('build', function() {
 ## API
 
 ### derequire(options)
+
+__Note:__ According to the [derequire](https://github.com/calvinmetcalf/derequire) README, the token you're changing from and the token you're changing to need to be the same length.
 
 #### options.tokenFrom
 Type: `String`
