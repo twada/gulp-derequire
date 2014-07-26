@@ -19,7 +19,7 @@ npm install --save-dev gulp-derequire
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var derequire = require("gulp-derequire");
+var derequire = require('gulp-derequire');
 var browserify = require('browserify'),
 
 gulp.task('build', function() {
