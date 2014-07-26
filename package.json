@@ -13,15 +13,15 @@
     "test"
   ],
   "dependencies": {
-    "bufferstreams": "~0.0.2",
-    "derequire": "~0.9.0",
+    "bufferstreams": "^0.0.2",
+    "derequire": "^0.9.0",
     "gulp-util": "~3.0.0",
-    "through2": "~0.5.1",
-    "xtend": "~3.0.0"
+    "through2": "^1.0.0",
+    "xtend": "^3.0.0"
   },
   "devDependencies": {
-    "mocha": "~1.21.0",
-    "event-stream": "~3.1.7"
+    "mocha": "^1.21.0",
+    "event-stream": "^3.1.7"
   },
   "scripts": {
     "jshint": "jshint index.js",
