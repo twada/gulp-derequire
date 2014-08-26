@@ -1,18 +1,13 @@
 {
   "name": "gulp-derequire",
-  "version": "0.3.1",
   "description": "A Gulp plugin to apply derequire to target Buffer/Stream",
-  "keywords": [
-    "derequire",
-    "gulpplugin"
-  ],
-  "main": "./index.js",
-  "files": [
-    "README.md",
-    "index.js",
-    "package.json",
-    "test"
-  ],
+  "version": "0.3.1",
+  "author": {
+    "name": "Takuto Wada",
+    "email": "takuto.wada@gmail.com",
+    "url": "http://github.com/twada"
+  },
+  "bugs": "https://github.com/twada/gulp-derequire/issues",
   "dependencies": {
     "bufferstreams": "^0.0.2",
     "derequire": "^1.0.0",
@@ -21,28 +16,31 @@
     "xtend": "^4.0.0"
   },
   "devDependencies": {
-    "mocha": "^1.21.4",
-    "event-stream": "^3.1.7"
+    "event-stream": "^3.1.7",
+    "mocha": "^1.21.4"
   },
-  "scripts": {
-    "jshint": "jshint index.js",
-    "test": "mocha"
+  "files": [
+    "README.md",
+    "index.js",
+    "package.json",
+    "test"
+  ],
+  "homepage": "http://github.com/twada/gulp-derequire",
+  "keywords": [
+    "derequire",
+    "gulpplugin"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "http://twada.mit-license.org/"
   },
-  "author": {
-    "name": "Takuto Wada",
-    "email": "takuto.wada@gmail.com",
-    "url": "http://github.com/twada"
-  },
+  "main": "./index.js",
   "repository": {
     "type": "git",
     "url": "http://github.com/twada/gulp-derequire.git"
   },
-  "homepage": "http://github.com/twada/gulp-derequire",
-  "bugs": "https://github.com/twada/gulp-derequire/issues",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://twada.mit-license.org/"
-    }
-  ]
+  "scripts": {
+    "jshint": "jshint index.js",
+    "test": "mocha"
+  }
 }
