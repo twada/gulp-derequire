@@ -27,10 +27,7 @@ gulp.task('build', function() {
     var bundleStream = browserify({entries: './index.js', standalone: 'yourModule'}).bundle();
     return bundleStream
         .pipe(source('yourModule.js'))
-        .pipe(derequire({
-            tokenTo:   '_dereq_',
-            tokenFrom: 'require'
-        }))
+        .pipe(derequire())
         .pipe(gulp.dest('./build'));
 });
 ```
@@ -52,6 +49,25 @@ Type: `String`
 Default value: `'_dereq_'`
 
 Identifier to replace to.
+
+#### customization example
+
+```javascript
+var derequire = require('gulp-derequire');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
+
+gulp.task('build', function() {
+    var bundleStream = browserify({entries: './index.js', standalone: 'yourModule'}).bundle();
+    return bundleStream
+        .pipe(source('yourModule.js'))
+        .pipe(derequire({
+            tokenTo:   '_dereq_',
+            tokenFrom: 'require'
+        }))
+        .pipe(gulp.dest('./build'));
+});
+```
 
 
 ## Author
