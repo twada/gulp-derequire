@@ -10,8 +10,8 @@
   "bugs": "https://github.com/twada/gulp-derequire/issues",
   "dependencies": {
     "bufferstreams": "^0.0.2",
-    "derequire": "^1.0.0",
-    "gulp-util": "^3.0.0",
+    "derequire": "^1.2.0",
+    "gulp-util": "^3.0.1",
     "through2": "^1.1.1",
     "xtend": "^4.0.0"
   },
