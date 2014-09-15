@@ -9,20 +9,15 @@
  */
 var through = require('through2'),
     gutil = require('gulp-util'),
-    xtend = require('xtend'),
     derequire = require('derequire'),
     BufferStreams = require('bufferstreams');
 
-module.exports = function (params) {
+module.exports = function (tokenTo, tokenFrom) {
     'use strict';
 
-    var opts = xtend({
-        tokenTo: '_dereq_',
-        tokenFrom: 'require'
-    }, params);
 
     var transform = function (code) {
-        return new Buffer(derequire(code, opts.tokenTo, opts.tokenFrom));
+        return new Buffer(derequire(code, tokenTo, tokenFrom));
     };
 
     return through.obj(function (file, encoding, callback) {

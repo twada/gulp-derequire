@@ -34,23 +34,13 @@ gulp.task('build', function() {
 
 ## API
 
-### derequire(options)
+### derequire(parameters)
 
-__Note:__ According to the [derequire](https://github.com/calvinmetcalf/derequire) README, the token you're changing from and the token you're changing to need to be the same length.
-
-#### options.tokenFrom
-Type: `String`
-Default value: `'require'`
-
-Target identifier to replace from.
-
-#### options.tokenTo
-Type: `String`
-Default value: `'_dereq_'`
-
-Identifier to replace to.
+__Note:__ parameters are passed verbetim to derequrie so see [its readme](https://github.com/calvinmetcalf/derequire) for options 
 
 #### customization example
+
+to change both requrie and define
 
 ```javascript
 var derequire = require('gulp-derequire');
@@ -61,10 +51,16 @@ gulp.task('build', function() {
     var bundleStream = browserify({entries: './index.js', standalone: 'yourModule'}).bundle();
     return bundleStream
         .pipe(source('yourModule.js'))
-        .pipe(derequire({
-            tokenTo:   '_dereq_',
-            tokenFrom: 'require'
-        }))
+        .pipe(derequire([
+            {
+                from: 'require',
+                to: '_dereq_'
+            },
+            {
+                from: 'define',
+                to: '_defi_'
+            }
+        ]))
         .pipe(gulp.dest('./build'));
 });
 ```
