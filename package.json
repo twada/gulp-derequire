@@ -19,6 +19,7 @@
     "mocha": "^1.21.4"
   },
   "files": [
+    "CHANGELOG.md",
     "README.md",
     "index.js",
     "package.json",
