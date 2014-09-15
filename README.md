@@ -40,7 +40,7 @@ __Note:__ parameters are passed verbetim to derequrie so see [its readme](https:
 
 #### customization example
 
-to change both requrie and define
+to change both require and define
 
 ```javascript
 var derequire = require('gulp-derequire');
