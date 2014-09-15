@@ -1,7 +1,7 @@
 ## 1.2.0 (2014-09-16)
 
 
-* **gulp-derequire:** use same paramaters as derequire ([a20ac9bc](https://github.com/twada/gulp-derequire/commit/a20ac9bc9e3e6a02cb366f19b06a543d0a0c5d30))
+* **gulp-derequire:** use same paramaters as derequire ([a20ac9bc](https://github.com/twada/gulp-derequire/commit/a20ac9bc9e3e6a02cb366f19b06a543d0a0c5d30)) by @calvinmetcalf
 
 
 ## 1.1.0 (2014-09-12)

@@ -8,6 +8,12 @@
     "url": "http://github.com/twada"
   },
   "bugs": "https://github.com/twada/gulp-derequire/issues",
+  "contributors": [
+    {
+      "name": "Calvin Metcalf",
+      "url": "https://github.com/calvinmetcalf"
+    }
+  ],
   "dependencies": {
     "bufferstreams": "^0.0.2",
     "derequire": "^1.2.0",
