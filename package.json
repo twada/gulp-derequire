@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "event-stream": "^3.1.7",
-    "mocha": "^1.21.4"
+    "mocha": "^1.21.5"
   },
   "files": [
     "CHANGELOG.md",
