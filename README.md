@@ -73,7 +73,7 @@ gulp.task('build', function() {
 
 ## License
 
-Licensed under the [MIT](http://twada.mit-license.org/) license.
+Licensed under the [MIT](http://twada.mit-license.org/2014-2015) license.
 
 
 [npm-url]: https://npmjs.org/package/gulp-derequire
