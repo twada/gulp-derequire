@@ -36,7 +36,7 @@ gulp.task('build', function() {
 
 ### derequire(parameters)
 
-__Note:__ parameters are passed verbetim to derequrie so see [its readme](https://github.com/calvinmetcalf/derequire) for options 
+__Note:__ parameters are passed verbatim to derequire so see [its readme](https://github.com/calvinmetcalf/derequire) for options 
 
 #### customization example
 
