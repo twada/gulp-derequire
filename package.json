@@ -15,9 +15,9 @@
     }
   ],
   "dependencies": {
-    "bufferstreams": "^0.0.2",
-    "derequire": "^1.2.0",
-    "gulp-util": "^3.0.1",
+    "bufferstreams": "^1.0.1",
+    "derequire": "^2.0.0",
+    "gulp-util": "^3.0.4",
     "through2": "^1.1.1"
   },
   "devDependencies": {
