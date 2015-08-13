@@ -7,14 +7,13 @@
  * Licensed under the MIT license.
  *   http://twada.mit-license.org/2014-2015
  */
-var through = require('through2'),
-    gutil = require('gulp-util'),
-    derequire = require('derequire'),
-    BufferStreams = require('bufferstreams');
+var through = require('through2');
+var gutil = require('gulp-util');
+var derequire = require('derequire');
+var BufferStreams = require('bufferstreams');
 
 module.exports = function (tokenTo, tokenFrom) {
     'use strict';
-
 
     var transform = function (code) {
         return new Buffer(derequire(code, tokenTo, tokenFrom));
