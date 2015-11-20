@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "event-stream": "^3.3.2",
-    "jshint": "^2.8.0",
+    "jshint": "2.8.0",
     "mocha": "^2.3.4"
   },
   "files": [
