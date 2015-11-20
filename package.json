@@ -27,6 +27,7 @@
   },
   "files": [
     "CHANGELOG.md",
+    "MIT-LICENSE",
     "README.md",
     "index.js",
     "package.json",
@@ -37,10 +38,7 @@
     "derequire",
     "gulpplugin"
   ],
-  "license": {
-    "type": "MIT",
-    "url": "http://twada.mit-license.org/2014-2015"
-  },
+  "license": "MIT",
   "main": "./index.js",
   "repository": {
     "type": "git",
