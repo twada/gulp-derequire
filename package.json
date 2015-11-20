@@ -21,9 +21,9 @@
     "through2": "^2.0.0"
   },
   "devDependencies": {
-    "event-stream": "^3.3.1",
+    "event-stream": "^3.3.2",
     "jshint": "^2.8.0",
-    "mocha": "^2.2.5"
+    "mocha": "^2.3.4"
   },
   "files": [
     "CHANGELOG.md",
