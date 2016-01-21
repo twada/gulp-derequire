@@ -1,5 +1,10 @@
 # gulp-derequire
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]
+
+[![Build Status][travis-image]][travis-url]
+[![NPM version][npm-image]][npm-url]
+[![Dependency Status][depstat-image]][depstat-url]
+[![License][license-image]][license-url]
+
 
 > A [gulp](https://github.com/wearefractal/gulp) plugin for [derequire](https://github.com/calvinmetcalf/derequire).
 
@@ -73,7 +78,7 @@ gulp.task('build', function() {
 
 ## License
 
-Licensed under the [MIT](http://twada.mit-license.org/2014-2015) license.
+Licensed under the [MIT](https://github.com/twada/gulp-derequire/blob/master/MIT-LICENSE) license.
 
 
 [npm-url]: https://npmjs.org/package/gulp-derequire
@@ -84,3 +89,6 @@ Licensed under the [MIT](http://twada.mit-license.org/2014-2015) license.
 
 [depstat-url]: https://gemnasium.com/twada/gulp-derequire
 [depstat-image]: https://gemnasium.com/twada/gulp-derequire.svg
+
+[license-url]: https://github.com/twada/gulp-derequire/blob/master/MIT-LICENSE
+[license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg

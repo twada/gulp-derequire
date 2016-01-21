@@ -3,9 +3,9 @@
  * 
  * https://github.com/twada/gulp-derequire
  *
- * Copyright (c) 2014-2015 Takuto Wada
+ * Copyright (c) 2014-2016 Takuto Wada
  * Licensed under the MIT license.
- *   http://twada.mit-license.org/2014-2015
+ *   https://github.com/twada/gulp-derequire/blob/master/MIT-LICENSE
  */
 var through = require('through2');
 var gutil = require('gulp-util');
