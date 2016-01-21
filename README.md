@@ -73,7 +73,7 @@ gulp.task('build', function() {
 
 ## Author
 
-* [Takuto Wada](http://github.com/twada)
+* [Takuto Wada](https://github.com/twada)
 
 
 ## License
@@ -84,7 +84,7 @@ Licensed under the [MIT](https://github.com/twada/gulp-derequire/blob/master/MIT
 [npm-url]: https://npmjs.org/package/gulp-derequire
 [npm-image]: https://badge.fury.io/js/gulp-derequire.svg
 
-[travis-url]: http://travis-ci.org/twada/gulp-derequire
+[travis-url]: https://travis-ci.org/twada/gulp-derequire
 [travis-image]: https://secure.travis-ci.org/twada/gulp-derequire.svg?branch=master
 
 [depstat-url]: https://gemnasium.com/twada/gulp-derequire
