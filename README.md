@@ -6,7 +6,7 @@
 [![License][license-image]][license-url]
 
 
-> A [gulp](https://github.com/wearefractal/gulp) plugin for [derequire](https://github.com/calvinmetcalf/derequire).
+> A [gulp](https://github.com/gulpjs/gulp) plugin for [derequire](https://github.com/calvinmetcalf/derequire).
 
 
 ## Description
