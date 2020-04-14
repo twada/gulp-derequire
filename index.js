@@ -8,15 +8,16 @@
  *   https://github.com/twada/gulp-derequire/blob/master/MIT-LICENSE
  */
 var through = require('through2');
-var gutil = require('gulp-util');
+var PluginError = require('plugin-error');
 var derequire = require('derequire');
+var bufferFrom = require('buffer-from');
 var BufferStreams = require('bufferstreams');
 
 module.exports = function (tokenTo, tokenFrom) {
     'use strict';
 
     var transform = function (code) {
-        return new Buffer(derequire(code, tokenTo, tokenFrom));
+        return bufferFrom(derequire(code, tokenTo, tokenFrom));
     };
 
     return through.obj(function (file, encoding, callback) {
@@ -29,7 +30,7 @@ module.exports = function (tokenTo, tokenFrom) {
         } else if (file.isStream()) {
             file.contents = file.contents.pipe(new BufferStreams(function(err, buf, cb) {
                 if(err) {
-                    cb(new gutil.PluginError('gulp-derequire', err, {showStack: true}));
+                    cb(new PluginError('gulp-derequire', err, {showStack: true}));
                 } else {
                     cb(null, transform(buf.toString(encoding)));
                 }
