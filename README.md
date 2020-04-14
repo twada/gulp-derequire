@@ -2,7 +2,6 @@
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
-[![Dependency Status][depstat-image]][depstat-url]
 [![License][license-image]][license-url]
 
 
@@ -86,9 +85,6 @@ Licensed under the [MIT](https://github.com/twada/gulp-derequire/blob/master/MIT
 
 [travis-url]: https://travis-ci.org/twada/gulp-derequire
 [travis-image]: https://secure.travis-ci.org/twada/gulp-derequire.svg?branch=master
-
-[depstat-url]: https://gemnasium.com/twada/gulp-derequire
-[depstat-image]: https://gemnasium.com/twada/gulp-derequire.svg
 
 [license-url]: https://github.com/twada/gulp-derequire/blob/master/MIT-LICENSE
 [license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg
