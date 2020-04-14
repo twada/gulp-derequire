@@ -10,13 +10,14 @@
 var through = require('through2');
 var PluginError = require('plugin-error');
 var derequire = require('derequire');
+var bufferFrom = require('buffer-from');
 var BufferStreams = require('bufferstreams');
 
 module.exports = function (tokenTo, tokenFrom) {
     'use strict';
 
     var transform = function (code) {
-        return new Buffer(derequire(code, tokenTo, tokenFrom));
+        return bufferFrom(derequire(code, tokenTo, tokenFrom));
     };
 
     return through.obj(function (file, encoding, callback) {

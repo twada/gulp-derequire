@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "bufferstreams": "^1.0.1",
+    "buffer-from": "^1.0.0",
     "derequire": "^2.0.0",
     "plugin-error": "^1.0.0",
     "through2": "^2.0.0"
