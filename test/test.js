@@ -6,20 +6,20 @@ delete require.cache[require.resolve('../')];
 var fs = require('fs');
 var es = require('event-stream');
 var assert = require('assert');
-var gutil = require('gulp-util');
+var Vinyl = require('vinyl');
 var derequire = require('../');
 
 describe('gulp-derequire', function () {
     
     it('should produce expected file via buffer', function (done) {
         var stream = derequire();
-        var srcFile = new gutil.File({
+        var srcFile = new Vinyl({
             path: 'test/fixtures/example.js',
             cwd: 'test/',
             base: 'test/fixtures',
             contents: fs.readFileSync('test/fixtures/example.js')
         });
-        var expectedFile = new gutil.File({
+        var expectedFile = new Vinyl({
             path: 'test/expected/example.js',
             cwd: 'test/',
             base: 'test/expected',
@@ -41,13 +41,13 @@ describe('gulp-derequire', function () {
 
     it('should produce expected file via stream', function (done) {
         var stream = derequire();
-        var srcStream = new gutil.File({
+        var srcStream = new Vinyl({
             path: 'test/fixtures/example.js',
             cwd: 'test/',
             base: 'test/fixtures',
             contents: fs.createReadStream('test/fixtures/example.js')
         });
-        var expectedFile = new gutil.File({
+        var expectedFile = new Vinyl({
             path: 'test/expected/example.js',
             cwd: 'test/',
             base: 'test/expected',
@@ -80,13 +80,13 @@ describe('gulp-derequire', function () {
                 to: '_defi_'
             }
         ]);
-        var srcFile = new gutil.File({
+        var srcFile = new Vinyl({
             path: 'test/fixtures/define.require.js',
             cwd: 'test/',
             base: 'test/fixtures',
             contents: fs.readFileSync('test/fixtures/define.require.js')
         });
-        var expectedFile = new gutil.File({
+        var expectedFile = new Vinyl({
             path: 'test/expected/define.require.js',
             cwd: 'test/',
             base: 'test/expected',

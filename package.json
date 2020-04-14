@@ -17,13 +17,14 @@
   "dependencies": {
     "bufferstreams": "^1.0.1",
     "derequire": "^2.0.0",
-    "gulp-util": "^3.0.4",
+    "plugin-error": "^1.0.0",
     "through2": "^2.0.0"
   },
   "devDependencies": {
     "event-stream": "^3.3.2",
     "jshint": "2.8.0",
-    "mocha": "^2.3.4"
+    "mocha": "^2.3.4",
+    "vinyl": "^2.0.0"
   },
   "files": [
     "CHANGELOG.md",
