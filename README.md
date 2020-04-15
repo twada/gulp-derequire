@@ -2,6 +2,7 @@
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
+[![Code Style][style-image]][style-url]
 [![License][license-image]][license-url]
 
 
@@ -23,12 +24,12 @@ npm install --save-dev gulp-derequire
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var derequire = require('gulp-derequire');
-var browserify = require('browserify');
-var source = require('vinyl-source-stream');
+const derequire = require('gulp-derequire');
+const browserify = require('browserify');
+const source = require('vinyl-source-stream');
 
-gulp.task('build', function() {
-    var bundleStream = browserify({entries: './index.js', standalone: 'yourModule'}).bundle();
+gulp.task('build', () => {
+    const bundleStream = browserify({entries: './index.js', standalone: 'yourModule'}).bundle();
     return bundleStream
         .pipe(source('yourModule.js'))
         .pipe(derequire())
@@ -40,19 +41,19 @@ gulp.task('build', function() {
 
 ### derequire(parameters)
 
-__Note:__ parameters are passed verbatim to derequire so see [its readme](https://github.com/calvinmetcalf/derequire) for options 
+__Note:__ parameters are passed verbatim to derequire so see [its readme](https://github.com/calvinmetcalf/derequire) for options
 
 #### customization example
 
 to change both require and define
 
 ```javascript
-var derequire = require('gulp-derequire');
-var browserify = require('browserify');
-var source = require('vinyl-source-stream');
+const derequire = require('gulp-derequire');
+const browserify = require('browserify');
+const source = require('vinyl-source-stream');
 
-gulp.task('build', function() {
-    var bundleStream = browserify({entries: './index.js', standalone: 'yourModule'}).bundle();
+gulp.task('build', () => {
+    const bundleStream = browserify({entries: './index.js', standalone: 'yourModule'}).bundle();
     return bundleStream
         .pipe(source('yourModule.js'))
         .pipe(derequire([
@@ -75,6 +76,11 @@ gulp.task('build', function() {
 * [Takuto Wada](https://github.com/twada)
 
 
+## Support Policy
+
+Supports Node under maintenance. In other words, we stop supporting old Node versions when [their maintenance ends](https://github.com/nodejs/Release). Any other environments are not supported officially (means that we do not test against them on CI service).
+
+
 ## License
 
 Licensed under the [MIT](https://github.com/twada/gulp-derequire/blob/master/MIT-LICENSE) license.
@@ -88,3 +94,6 @@ Licensed under the [MIT](https://github.com/twada/gulp-derequire/blob/master/MIT
 
 [license-url]: https://github.com/twada/gulp-derequire/blob/master/MIT-LICENSE
 [license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg
+
+[style-url]: https://github.com/Flet/semistandard
+[style-image]: https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg
