@@ -2,6 +2,7 @@
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
+[![Code Style][style-image]][style-url]
 [![License][license-image]][license-url]
 
 
@@ -88,3 +89,6 @@ Licensed under the [MIT](https://github.com/twada/gulp-derequire/blob/master/MIT
 
 [license-url]: https://github.com/twada/gulp-derequire/blob/master/MIT-LICENSE
 [license-image]: https://img.shields.io/badge/license-MIT-brightgreen.svg
+
+[style-url]: https://github.com/Flet/semistandard
+[style-image]: https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg
