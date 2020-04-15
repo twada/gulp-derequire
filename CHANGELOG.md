@@ -1,3 +1,19 @@
+## [3.0.0](http://github.com/twada/gulp-derequire/releases/tag/v3.0.0) (2020-04-15)
+
+
+#### Features
+
+* [Modernize codebase and dependencies](https://github.com/twada/gulp-derequire/pull/5)
+
+
+#### Breaking Changes
+
+* drop support for old Node versions (Node < 10). Users of old Nodes should install `gulp-derequire@2.x`
+
+ ([c5a9d14e](http://github.com/twada/gulp-derequire/commit/c5a9d14ef003bde1f0c5d530cb580dc94a81adbf))
+
+
+
 ### [2.1.1](http://github.com/twada/gulp-derequire/releases/tag/v2.1.1) (2020-04-15)
 
  * [Replace deprecated dependencies](https://github.com/twada/gulp-derequire/pull/4)
