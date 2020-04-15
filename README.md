@@ -24,12 +24,12 @@ npm install --save-dev gulp-derequire
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var derequire = require('gulp-derequire');
-var browserify = require('browserify');
-var source = require('vinyl-source-stream');
+const derequire = require('gulp-derequire');
+const browserify = require('browserify');
+const source = require('vinyl-source-stream');
 
-gulp.task('build', function() {
-    var bundleStream = browserify({entries: './index.js', standalone: 'yourModule'}).bundle();
+gulp.task('build', () => {
+    const bundleStream = browserify({entries: './index.js', standalone: 'yourModule'}).bundle();
     return bundleStream
         .pipe(source('yourModule.js'))
         .pipe(derequire())
@@ -41,19 +41,19 @@ gulp.task('build', function() {
 
 ### derequire(parameters)
 
-__Note:__ parameters are passed verbatim to derequire so see [its readme](https://github.com/calvinmetcalf/derequire) for options 
+__Note:__ parameters are passed verbatim to derequire so see [its readme](https://github.com/calvinmetcalf/derequire) for options
 
 #### customization example
 
 to change both require and define
 
 ```javascript
-var derequire = require('gulp-derequire');
-var browserify = require('browserify');
-var source = require('vinyl-source-stream');
+const derequire = require('gulp-derequire');
+const browserify = require('browserify');
+const source = require('vinyl-source-stream');
 
-gulp.task('build', function() {
-    var bundleStream = browserify({entries: './index.js', standalone: 'yourModule'}).bundle();
+gulp.task('build', () => {
+    const bundleStream = browserify({entries: './index.js', standalone: 'yourModule'}).bundle();
     return bundleStream
         .pipe(source('yourModule.js'))
         .pipe(derequire([
