@@ -7,18 +7,13 @@
  * Licensed under the MIT license.
  *   https://github.com/twada/gulp-derequire/blob/master/MIT-LICENSE
  */
-var through = require('through2');
-var PluginError = require('plugin-error');
-var derequire = require('derequire');
-var bufferFrom = require('buffer-from');
-var BufferStreams = require('bufferstreams');
+const derequire = require('derequire');
+const through = require('through2');
+const PluginError = require('plugin-error');
+const BufferStreams = require('bufferstreams');
 
-module.exports = function (tokenTo, tokenFrom) {
-  'use strict';
-
-  var transform = function (code) {
-    return bufferFrom(derequire(code, tokenTo, tokenFrom));
-  };
+module.exports = (tokenTo, tokenFrom) => {
+  const transform = (code) => Buffer.from(derequire(code, tokenTo, tokenFrom));
 
   return through.obj(function (file, encoding, callback) {
     encoding = encoding || 'utf8';
@@ -28,7 +23,7 @@ module.exports = function (tokenTo, tokenFrom) {
       file.contents = transform(file.contents.toString(encoding));
       this.push(file);
     } else if (file.isStream()) {
-      file.contents = file.contents.pipe(new BufferStreams(function (err, buf, cb) {
+      file.contents = file.contents.pipe(new BufferStreams((err, buf, cb) => {
         if (err) {
           cb(new PluginError('gulp-derequire', err, { showStack: true }));
         } else {
